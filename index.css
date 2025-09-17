@@ -1,0 +1,406 @@
+/* Global box-sizing and smooth scroll */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Comfortaa", serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+.heading {
+    width: fit-content;
+    margin: 0 auto;
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background: #F8F5E9;
+}
+
+/* Paragraphs */
+p {
+    margin: 0px;
+}
+
+/* Hero Section */
+#HeroSection {
+    width: 100%;
+    height: 85vh;
+    background: #F8F5E9;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.heroSectionContent {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myImageCircle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 5px white solid;
+    max-width: 90%;
+    object-fit: cover;
+}
+
+.heroSectionContent p {
+    font-weight: 600;
+    font-size: clamp(18px, 4vw, 24px);
+}
+
+.focus-text {
+    font-weight: 800;
+    font-size: clamp(24px, 6vw, 40px);
+}
+
+.heroButtons {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background 0.3s;
+    margin: 5px;
+}
+
+.heroButtons:hover {
+    background: #333;
+}
+
+/* About Me Section */
+#aboutMeSection {
+    padding: 40px 0;
+}
+
+#aboutMeSection .container {
+    max-width: 85%;
+}
+
+/* Skills Section */
+#skillsSection {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.skillsDiv {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    min-height: 100px;
+    flex-wrap: wrap;
+}
+
+.skillsDiv .p1 {
+    width: 25%;
+    background: #F8F5E9;
+    text-align: center;
+    font-size: clamp(16px, 3vw, 25px);
+    font-weight: 700;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word; /* Prevents overflow */
+    overflow-wrap: break-word; /* Standard property for word wrap */
+}
+
+.skillsDiv .p2 {
+    width: 75%;
+    font-size: clamp(14px, 3vw, 23px);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.skillsList {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+/* Project Section */
+#projectSection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.Project {
+    width: 85%;
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.Project .p1 {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.Project .p1 img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+.Project .p2 {
+    width: 50%;
+    padding: 10px;
+}
+
+.gitHubButton {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin: 5px;
+}
+
+.gitHubButton:hover {
+    background: #333;
+}
+
+.demoButton {
+    background: #F8F5E9;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background 0.3s;
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+
+.demoButton:hover {
+    background: #ddd;
+}
+
+/* Contact Section */
+#ContactSection {
+    width: 85%;
+    max-width: 1200px;
+    margin: 40px auto;
+    min-height: 200px;
+    border-radius: 15px;
+    background: #F8F5E9;
+    padding: 20px;
+    text-align: center;
+}
+
+.Contactbuttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.contactDivOne,
+.contactDivTwo {
+    width: 48%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.contactDivOne {
+    background: #F44336;
+}
+
+.contactDivTwo {
+    background: #0177B4;
+}
+
+.contactDivOne:hover {
+    background: #d32f2f;
+    cursor: pointer;
+}
+
+.contactDivTwo:hover {
+    background: #005a9c;
+    cursor: pointer;
+}
+
+.contactContent {
+    text-align: left;
+}
+
+.contactContent a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 75px;
+    font-size: clamp(14px, 2vw, 18px);
+}
+
+/* --- Media Queries for responsive design --- */
+
+/* Tablets and smaller laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .heroSectionContent p {
+        font-size: clamp(16px, 3.5vw, 22px);
+    }
+
+    .focus-text {
+        font-size: clamp(22px, 5vw, 36px);
+    }
+
+    .skillsDiv .p1 {
+        font-size: clamp(14px, 2.5vw, 22px);
+    }
+
+    .skillsDiv .p2 {
+        font-size: clamp(12px, 2.5vw, 20px);
+    }
+}
+
+/* Mobile phones and tablets (portrait) */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem !important;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+
+    #HeroSection {
+        height: auto;
+    }
+    
+    .heroSectionContent p {
+        font-size: 18px;
+    }
+    
+    .focus-text {
+        font-size: 28px;
+    }
+    
+    .myImageCircle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .heroButtons {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+    
+    #aboutMeSection .row {
+        flex-direction: column;
+    }
+    
+    #aboutMeSection .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .skillsDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skillsDiv .p1,
+    .skillsDiv .p2 {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        word-wrap: break-word; /* Ensures text breaks to fit */
+        overflow-wrap: break-word; /* Standard for word break */
+    }
+
+    .skillsList {
+        justify-content: center;
+        padding-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .Project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Project .p1,
+    .Project .p2 {
+        width: 100%;
+    }
+
+    .Project .p1 img {
+        max-width: 80%;
+    }
+    
+    .gitHubButton,
+    .demoButton {
+        font-size: 16px;
+        padding: 8px 16px;
+        width: 80%;
+        margin: 5px auto;
+        display: block;
+    }
+    
+    .Contactbuttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contactDivOne,
+    .contactDivTwo {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .contactContent a {
+        font-size: 14px;
+    }
+}
